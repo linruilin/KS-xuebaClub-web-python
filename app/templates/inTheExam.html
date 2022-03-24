@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=no,
+    width=device-width,initial-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>考试中</title>
+    <script src="/js/zepto.min.js"></script>
+    <script src="/js/utils.js"></script>
+    <link rel="stylesheet" href="/css/base.css" />
+    <link rel="stylesheet" href="/css/main.css" />
+  </head>
+  <body>
+    <section id="inTheExam">
+      <header>
+        剩余时间：
+        <strong></strong>
+      </header>
+      <div class="main">
+        <div class="_radio">
+          <span class="g-r-l-gradient">单选题</span>
+          <div class="form">
+            <p class="title">
+              高思成了时间课评完成时间是在上课结束后多少小 时之内课评完成时间？
+            </p>
+            <label>
+              <input type="radio" name="radio1" />选项A
+              <span class="select-icon"></span>
+            </label>
+            <label>
+              <input type="radio" name="radio1" />选项B
+              <span class="select-icon"></span>
+            </label>
+            <label>
+              <input type="radio" name="radio1" />选项C
+              <span class="select-icon"></span>
+            </label>
+          </div>
+        </div>
+        <div class="_checklist">
+          <span class="g-r-l-gradient">多选题</span>
+          <div class="form">
+            <p class="title">复选框列表</p>
+            <label>
+              <input type="checkbox" name="checkbox1" />选项A
+              <span class="select-icon"></span>
+            </label>
+            <label>
+              <input type="checkbox" name="checkbox1" />选项B
+              <span class="select-icon"></span>
+            </label>
+            <label>
+              <input type="checkbox" name="checkbox1" />选项C
+              <span class="select-icon"></span>
+            </label>
+          </div>
+        </div>
+        <div class="fill-in">
+          <span class="g-r-l-gradient">填空题</span>
+          <div class="fill-in-box">
+            <p class="title blue-line">第一题、</p>
+            <p class="content">
+              高思成了时间课评完成时间是在上课结束后多少小 时之内课评完成时间？
+            </p>
+            <input type="text" placeholder="请输入内容" />
+          </div>
+          <div class="fill-in-box">
+            <p class="title blue-line">第二题、</p>
+            <p class="content">
+              高思成了时间课评完成时间是在上课结束后多少小 时之内课评完成时间？
+            </p>
+            <input type="text" placeholder="请输入内容" />
+          </div>
+        </div>
+      </div>
+      <button class="g-l-r-gradient" @click="next">下一题</button>
+    </section>
+  </body>
+  <script src="/js/inTheExam.js"></script>
+</html>

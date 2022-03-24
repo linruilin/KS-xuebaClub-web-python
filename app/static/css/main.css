@@ -1,0 +1,869 @@
+/* index start */
+#index {
+  min-height: 100vh;
+}
+
+#index .main {
+  padding: 0.2rem 0.3rem 0;
+}
+
+#index .module {
+  float: left;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 3.3rem;
+  height: 3rem;
+  margin-bottom: 0.2rem;
+  font-size: 0.3rem;
+  line-height: 0.3rem;
+  border-radius: 0.1rem;
+  background-color: #fff;
+  border: 1px solid #e8e9eb;
+}
+
+#index .module:nth-child(even) {
+  float: right;
+}
+
+#index .module img {
+  width: 0.9rem;
+  height: auto;
+  margin-bottom: 0.27rem;
+}
+
+#index footer {
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 0.98rem;
+  background-color: #fff;
+}
+
+#index footer a {
+  flex: 1;
+  text-align: center;
+  font-size: 0.24rem;
+  color: #9999cc;
+}
+
+#index footer a.active {
+  color: #717aff;
+}
+
+#index footer a img {
+  width: auto;
+  height: 0.37rem;
+}
+
+/* index end */
+
+/* login start */
+#login {
+  min-height: 100vh;
+  background: url("/img/index-bg.png") no-repeat top;
+  background-size: 100% auto;
+  overflow: hidden;
+}
+
+#login .main {
+  width: 7rem;
+  margin: 0.8rem auto 0;
+  padding: 0.73rem 0.35rem 1.4rem;
+  background: #fff;
+  border-radius: 0.1rem;
+}
+
+#login .main h1 {
+  font-size: 0.44rem;
+  line-height: 0.44rem;
+  color: #333;
+}
+
+#login .main h3 {
+  padding-bottom: 0.3rem;
+  font-size: 0.3rem;
+  line-height: 0.3rem;
+  color: #999;
+}
+
+#login .main .form {
+  padding: 1.2rem 0 0.3rem;
+}
+
+#login .main .form label {
+  margin-bottom: 0.16rem;
+  padding-left: 0.4rem;
+  line-height: 0.4rem;
+  font-size: 0.34rem;
+  color: #1a1a1a;
+  background: url("/img/phone-icon.png") no-repeat left center;
+  background-size: 0.26rem auto !important;
+}
+
+#login .main .form label:nth-child(3) {
+  background-image: url("/img/password-icon.png");
+}
+
+#login .main .form input {
+  width: 100%;
+  height: 0.7rem;
+  font-size: 0.28rem;
+  margin-bottom: 0.6rem;
+  line-height: 0.7rem;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+#login .main button {
+  width: 6.4rem;
+  height: 0.9rem;
+  font-size: 0.36rem;
+  color: #fff;
+  border-radius: 0.1rem;
+}
+
+#login footer {
+  margin-top: 1.2rem;
+  text-align: center;
+}
+
+#login footer .go-register {
+  position: relative;
+  padding: 0.2rem 0;
+  color: #333;
+  padding-right: 0.2rem;
+  background: url("/img/arrow-icon.png") no-repeat right center;
+  background-size: 0.13rem auto;
+}
+
+/* login end */
+
+/* register start */
+#register {
+  min-height: 100vh;
+  padding-bottom: 0.5rem;
+  background: url("/img/index-bg.png") no-repeat top;
+  background-size: 100% auto;
+  overflow: hidden;
+}
+
+#register .form {
+  position: relative;
+  padding-top: 0.8rem;
+  overflow: hidden;
+}
+
+#register .form .label {
+  margin-bottom: 0.16rem;
+  line-height: 0.4rem;
+  font-size: 0.34rem;
+  color: #1a1a1a;
+}
+
+#register .form .isphone {
+  position: absolute;
+  top: 0.6rem;
+  right: 0;
+  width: 1.4rem;
+  height: 0.6rem;
+  font-size: 14px;
+}
+
+#register .form input {
+  width: 100%;
+  height: 0.7rem;
+  font-size: 0.28rem;
+  margin-bottom: 0.6rem;
+  line-height: 0.7rem;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+#register .form .address-icon {
+  padding-right: 0.3rem;
+  background: url("/img/down-arrow.png") no-repeat right center;
+  background-size: 0.2rem auto;
+}
+
+#register .form .treaty-select {
+  padding: 0.4rem 0 0.4rem 0.44rem;
+  font-size: 0.28rem;
+  line-height: 0.3rem;
+  background: url("/img/not-select-icon.png") no-repeat left center;
+  background-size: 0.38rem auto;
+}
+
+#register .form .treaty-select.active {
+  background-image: url("/img/select-icon.png");
+}
+
+#register button {
+  display: block;
+  width: 6.4rem;
+  margin: 0.65rem auto 0;
+  height: 0.9rem;
+  font-size: 0.36rem;
+  color: #fff;
+  border-radius: 0.1rem;
+}
+
+#register .account-number {
+  width: 7rem;
+  margin: 0.8rem auto 0;
+  padding: 0.73rem 0.35rem 0;
+  background: #fff;
+  border-radius: 0.1rem;
+}
+
+#register .account-number h3 {
+  padding-bottom: 0.3rem;
+  font-size: 0.3rem;
+  line-height: 0.3rem;
+  color: #999;
+}
+
+#register .account-number h1 {
+  font-size: 0.44rem;
+  line-height: 0.44rem;
+  color: #333;
+}
+
+#register .user-info {
+  width: 7rem;
+  margin: 0.2rem auto 0;
+  padding: 0.4rem 0.35rem 0;
+  background: #fff;
+  border-radius: 0.1rem;
+}
+
+#register .user-info .form {
+  padding-top: 0;
+}
+
+#register footer {
+  margin-top: 0.5rem;
+  text-align: center;
+}
+
+#register footer .go-register {
+  position: relative;
+  color: #333;
+  padding: 0.2rem 0.2rem 0.2rem 0;
+  background: url("/img/arrow-icon.png") no-repeat right center;
+  background-size: 0.13rem auto;
+}
+
+#register .popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#register .popup-mask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+#register .popup-content {
+  position: absolute;
+  top: 5vh;
+  left: 5%;
+  z-index: 100;
+  width: 90%;
+  max-height: 90vh;
+  padding: 0.2rem;
+  background-color: #fff;
+  border-radius: 0.1rem;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+#register .popup-content h3 {
+  padding: 0.15rem 0;
+  text-align: center;
+}
+
+#register .popup-content p {
+  padding-bottom: 0.1rem;
+  font-size: 0.24rem;
+  line-height: 0.4rem;
+}
+
+#register .popup-content .confirm {
+  margin: 0.15rem auto 0;
+}
+
+/* register end */
+
+/* examination start */
+#examination .box {
+  display: block;
+  margin-bottom: 0.1rem;
+  padding: 0.34rem 0.24rem;
+  background-color: #fff;
+}
+
+#examination .box img {
+  float: left;
+  width: 2.3rem;
+  height: 1.6rem;
+  margin-right: 0.15rem;
+  border-radius: 0.1rem;
+}
+
+#examination .box p {
+  margin: 0 auto 0 2.3rem;
+}
+
+#examination .box p strong {
+  display: block;
+  padding-bottom: 0.14rem;
+  font-size: 0.3rem;
+  line-height: 0.3rem;
+}
+
+#examination .box p span {
+  display: -webkit-box;
+  font-size: 0.24rem;
+  line-height: 0.4rem;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  word-break: break-all;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+}
+
+/* examination end */
+
+/* personal start */
+#personal {
+  min-height: 100vh;
+  overflow: hidden;
+  background: url("/img/personal-bg.jpg") no-repeat;
+  background-size: 100% auto;
+}
+
+#personal header {
+  position: relative;
+  width: 7rem;
+  height: 2.3rem;
+  padding: 0 0.22rem 0 0.3rem;
+  margin: 1rem auto 0.2rem;
+  background-color: #fff;
+  border-radius: 0.1rem;
+}
+
+#personal header img.avatar {
+  width: 1.12rem;
+  height: 1.12rem;
+  border-radius: 50%;
+  background-color: #f5f6fb;
+}
+
+#personal header img.edit {
+  position: absolute;
+  top: 1.43rem;
+  left: 1.06rem;
+  width: 0.3rem;
+  height: 0.3rem;
+}
+
+#personal header .user-info {
+  flex: 1;
+  padding-left: 0.24rem;
+}
+
+#personal header .user-info strong {
+  display: block;
+  font-size: 0.36rem;
+  line-height: 0.36rem;
+}
+
+#personal header .user-info span {
+  font-size: 0.26rem;
+  line-height: 0.26rem;
+  color: #666;
+}
+
+#personal header img.arrow {
+  width: 0.16rem;
+  height: auto;
+}
+
+#personal .menu-list {
+  padding-right: 0.42rem;
+  background-color: #fff;
+}
+
+#personal .menu-list a {
+  display: block;
+  height: 1rem;
+  padding-left: 0.4rem;
+  line-height: 1rem;
+  color: #000;
+  background: url("/img/arrow-icon2.png") no-repeat right center;
+  background-size: 0.18rem auto;
+}
+
+#personal .menu-list a img {
+  width: 0.4rem;
+  height: auto;
+  margin-right: 0.24rem;
+  vertical-align: middle;
+}
+
+#personal footer {
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 0.98rem;
+  background-color: #fff;
+}
+
+#personal footer a {
+  flex: 1;
+  text-align: center;
+  font-size: 0.24rem;
+  color: #9999cc;
+}
+
+#personal footer a.active {
+  color: #717aff;
+}
+
+#personal footer a img {
+  width: auto;
+  height: 0.37rem;
+}
+
+/* personal end */
+
+/* mySubscribe start */
+#mySubscribe {
+  padding: 0.1rem 0;
+}
+
+#mySubscribe ul {
+  margin: 0 0.1rem;
+}
+
+#mySubscribe ul li {
+  height: 1.2rem;
+  margin-bottom: 0.1rem;
+  padding: 0 0.32rem;
+  line-height: 1.2rem;
+  background-color: #fff;
+}
+
+#mySubscribe ul li strong {
+  display: inline-block;
+  width: 5.5rem;
+  font-weight: normal;
+}
+
+#mySubscribe ul li span {
+  float: right;
+  font-size: 0.3rem;
+}
+
+/* mySubscribe end */
+
+/* inTheExam start */
+#inTheExam {
+  padding-bottom: 0.65rem;
+}
+
+#inTheExam header {
+  height: 0.94rem;
+  padding-left: 0.4rem;
+  line-height: 0.94rem;
+  background-color: #fff;
+}
+
+#inTheExam ._radio,
+#inTheExam ._checklist,
+#inTheExam .fill-in {
+  margin-top: 0.1rem;
+  padding: 0.22rem 0.4rem 0.6rem;
+  background: #fff;
+}
+
+#inTheExam .g-r-l-gradient {
+  display: inline-block;
+  padding: 0 0.12rem;
+  line-height: 0.36rem;
+  color: #fff;
+  font-size: 0.24rem;
+  border-radius: 0.06rem;
+  transform: scale(0.9);
+}
+
+#inTheExam .form .title {
+  margin: 0.2rem 0 0 0;
+  font-size: 0.3rem;
+  line-height: 0.52rem;
+  font-weight: 500;
+}
+
+#inTheExam .form label {
+  position: relative;
+  display: block;
+  padding: 0.15rem 0 0.15rem 1.2rem;
+}
+
+#inTheExam .form .select-icon {
+  position: absolute;
+  top: 50%;
+  left: 0.5rem;
+  width: 0.3rem;
+  height: 0.3rem;
+  margin-top: -0.15rem;
+  background-image: url("/img/not-selection.png");
+  background-size: 0.3rem 0.3rem;
+}
+
+#inTheExam .form label input {
+  display: none;
+}
+
+#inTheExam .form label input:checked + .select-icon {
+  background-image: url("/img/selection.png");
+}
+
+#inTheExam .fill-in {
+  padding: 0.22rem 0 0;
+}
+
+#inTheExam .fill-in .g-r-l-gradient {
+  margin: 0 0 0.22rem 0.4rem;
+}
+
+#inTheExam .fill-in-box {
+  padding: 0.1rem 0.4rem 0.6rem;
+  border-top: 0.1rem solid #f5f6fb;
+  border-bottom: 0.1rem solid #f5f6fb;
+}
+
+#inTheExam .fill-in-box .title {
+  padding: 0.34rem 0 0.24rem;
+  font-size: 0.3rem;
+  line-height: 0.3rem;
+}
+
+#inTheExa .fill-in-box .title::after {
+  left: 0.06rem;
+  bottom: 0.12rem;
+  width: 0.3rem;
+  height: 0.05rem;
+}
+
+#inTheExam.fill-in-box .content {
+  font-size: 0.3rem;
+  line-height: 0.52rem;
+}
+
+#inTheExam .fill-in-box input {
+  width: 100%;
+  height: 0.88rem;
+  margin-top: 0.2rem;
+  padding: 0 0.22rem;
+  color: #333;
+  font-size: 0.26rem;
+  line-height: 0.88rem;
+  background-color: #f4f4f4;
+  border-radius: 0.06rem;
+}
+
+#inTheExam button {
+  display: block;
+  width: 6.4rem;
+  margin: 0.65rem auto 0;
+  height: 0.9rem;
+  font-size: 0.36rem;
+  color: #fff;
+  border-radius: 0.1rem;
+}
+
+/* inTheExam end */
+
+/* result start */
+#result header {
+  position: relative;
+  height: 2.89rem;
+}
+
+#result header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 1.7rem;
+  background: -webkit-linear-gradient(#5ab0ff, #7572ff);
+  /* Safari 5.1-6.0 */
+  background: -o-linear-gradient(#5ab0ff, #7572ff);
+  /* Opera 11.1-12.0 */
+  background: -moz-linear-gradient(#5ab0ff, #7572ff);
+  /* Firefox 3.6-15 */
+  background: linear-gradient(#5ab0ff, #7572ff);
+  /* 标准语法 */
+}
+
+#result header .user-info {
+  position: relative;
+  top: 0.69rem;
+  z-index: 1000;
+  width: 7.18rem;
+  height: 2.2rem;
+  margin: 0 auto;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 0.1rem;
+}
+
+#result header .user-info .avatar {
+  display: inline-block;
+  width: 1.28rem;
+  height: 1.28rem;
+  margin-top: -0.3rem;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  background-color: #ccc;
+}
+
+#result header .user-info strong {
+  display: block;
+  line-height: 0.92rem;
+  font-size: 0.36rem;
+}
+
+#result .main {
+  margin-top: 0.2rem;
+}
+
+#result .main .title {
+  position: relative;
+  padding: 0.32rem 0 0.42rem 0.44rem;
+  font-size: 0.3rem;
+  line-height: 0.3rem;
+  color: #212121;
+  font-weight: 500;
+}
+
+#result .main .title::before {
+  content: "";
+  position: absolute;
+  top: 0.34rem;
+  left: 0.24rem;
+  width: 0.07rem;
+  height: 0.28rem;
+  background-color: #5e6ae2;
+}
+
+#result .main .score {
+  margin-bottom: 0.1rem;
+  padding-left: 0.4rem;
+  background-color: #fff;
+}
+
+#result .score .table {
+  padding-bottom: 0.44rem;
+}
+
+#result .score .table ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#result .score .table li {
+  width: 0.8rem;
+  margin-right: 1px;
+}
+
+#result .score .table li span {
+  display: block;
+  width: inherit;
+  height: 0.64rem;
+  margin-bottom: 1px;
+  line-height: 0.64rem;
+  text-align: center;
+  background-color: #f4f6ff;
+}
+
+#result .result {
+  margin-bottom: 0.1rem;
+  padding-bottom: 0.25rem;
+  background-color: #fff;
+}
+
+#result .result p {
+  padding: 0 0 0.3rem 0.44rem;
+}
+
+#result .result p strong {
+  padding-left: 0.4rem;
+}
+
+#result .evaluate {
+  padding-bottom: 0.6rem;
+  background-color: #fff;
+}
+
+#result .evaluate p {
+  padding: 0 0.4rem 0 0.44rem;
+  line-height: 0.4rem;
+}
+
+/* result end */
+
+/* curriculum start */
+#curriculum .li {
+  display: block;
+  margin-bottom: 0.24rem;
+  padding: 0.16rem 0.24rem;
+  background-color: #fff;
+}
+
+#curriculum .li .video-img {
+  position: relative;
+}
+
+#curriculum .li .video-img::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0.68rem;
+  height: 0.68rem;
+  transform: translate(-50%, -50%);
+  background: url("/img/play-icon.png") no-repeat;
+  background-size: 100% 100%;
+}
+
+#curriculum .li .video-img img {
+  width: 100%;
+  margin-right: 0.15rem;
+  border-radius: 0.1rem;
+}
+
+#curriculum .li strong {
+  display: block;
+  padding: 0.19rem 0 0.14rem;
+  font-size: 0.28rem;
+  line-height: 0.28rem;
+}
+
+#curriculum .li span {
+  display: -webkit-box;
+  font-size: 0.26rem;
+  line-height: 0.42rem;
+  color: #666;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  word-break: break-all;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+/* curriculum end */
+
+/* curriculum-detail start */
+#curriculum-detail header {
+  margin-bottom: 0.12rem;
+  background-color: #fff;
+}
+
+#curriculum-detail header video {
+  width: 100%;
+  height: 3.56rem;
+}
+
+#curriculum-detail header h3 {
+  padding: 0 0.24rem;
+  line-height: 0.9rem;
+  font-size: 0.3rem;
+  font-weight: normal;
+}
+
+#curriculum-detail .main {
+  padding: 0.3rem 0.24rem;
+  background-color: #fff;
+}
+
+#curriculum-detail .main .title {
+  padding-bottom: 0.5rem;
+  font-size: 0.3rem;
+}
+
+/* curriculum-detail end */
+
+#about {
+  display: flex;
+  height: 100vh;
+  padding-top: 3rem;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+}
+
+#about img {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+}
+
+#about h3 {
+  font-size: 0.4rem;
+  line-height: 1rem;
+}
+
+#about a {
+  color: blue;
+  text-decoration: underline;
+}
+
+#pay p {
+  padding: 0.45rem 0.24rem 0.3rem 0.24rem;
+  background-color: #fff;
+  font-weight: 500;
+  font-size: 0.32rem;
+}
+
+#pay ul {
+  padding: 0 0.24rem;
+  background-color: #fff;
+}
+
+#pay ul li {
+  height: 0.97rem;
+  color: #666;
+  font-size: 0.3rem;
+  justify-content: flex-start;
+  border-top: 1px solid #e5e5e5;
+}
+
+#pay ul li img {
+  width: 0.4rem;
+  height: 0.4rem;
+  margin-right: 0.24rem;
+}
+
+#pay button {
+  display: block;
+  height: 0.85rem;
+  width: 6.4rem;
+  text-align: center;
+  line-height: 0.85rem;
+  margin: 0.5rem auto 0;
+  font-size: 0.36rem;
+  color: #fff;
+  border-radius: 0.2rem;
+}

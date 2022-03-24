@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=no,
+    width=device-width,initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>登录</title>
+    {% include 'link.html' %}
+
+<body>
+    <section id="login">
+        <div class="main">
+            <h3>欢迎登陆</h3>
+            <h1>求索学霸Club</h1>
+            <div class="form">
+                <label>手机号或者用户名</label>
+                <input id="phone" type="text" placeholder="请输入手机号/用户名" />
+                <label>密码</label>
+                <input id="password" type="password" placeholder="请输入您的密码" />
+            </div>
+            <button class="g-l-r-gradient" onclick="login()">登录求索学霸Club</button>
+        </div>
+        <footer>
+            <a class="go-register" onclick="goRegister()">还没账户？注册求索学霸Club</a>
+        </footer>
+        <div style="margin-top: 1.2rem; text-align: center;">
+            <div class="ali-copyright-text">
+                <p>© 2019-2020 hzfxjy.net 版权所有</p>
+                <p>ICP证：<a href="http://beian.miit.gov.cn/" target="_blank">浙ICP备s19035974号</a></p>
+            </div>
+            <a href="http://www.beian.gov.cn/portal/registerSystemInfo" target="_blank">
+                <img class="ali-report-img" src="/img/beian.png" style="width: 20px; height: 20px;" />
+                <span class="ali-report-link-text">浙公网安备 33010502005838号</span>
+            </a>
+        </div>
+    </section>
+</body>
+<script src="/js/login.js"></script>
+
+</html>

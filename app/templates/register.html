@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui" />
+  <meta content="yes" name="apple-mobile-web-app-capable" />
+  <meta content="black" name="apple-mobile-web-app-status-bar-style" />
+  <meta content="telephone=no" name="format-detection" />
+  <meta content="email=no" name="format-detection" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>注册</title>
+  {% include 'link.html' %}
+  <link rel="stylesheet" href="/css/LArea.css" />
+</head>
+
+<body>
+  <section id="register">
+    <div class="account-number">
+      <h3>欢迎注册</h3>
+      <h1>求索学霸Club</h1>
+      <div class="form">
+        <label>手机号码<span class="g-red"> *</span></label>
+        <input type="tel" maxlength="11" class="phone" placeholder="请输入您的手机号" />
+        <button class="g-l-r-gradient isphone" onclick="isphone()">
+          验证
+        </button>
+        <label>密码<span class="g-red"> *</span></label>
+        <input type="password" class="password" placeholder="请输入您的密码" />
+        <label>重复密码<span class="g-red"> *</span></label>
+        <input type="password" class="again_password" placeholder="请再次输入您的密码" />
+      </div>
+    </div>
+    <div class="user-info">
+      <div class="form">
+        <label>学生姓名<span class="g-red"> *</span></label>
+        <input type="text" class="name" placeholder="请输入学生的姓名" />
+        <label>家长姓名<span class="g-red"> *</span></label>
+        <input type="text" class="parentName" placeholder="请输入家长姓名" />
+        <label>家长学历</label>
+        <input type="text" class="education " placeholder="请输入家长学历" />
+        <label>家长电话<span class="g-red"> *</span></label>
+        <input type="text" class="parentPhone " placeholder="请输入家长电话" />
+        <label>家长工作</label>
+        <input type="text" class="job" placeholder="请输入家长工作" />
+        <label>家庭地址<span class="g-red"> *</span></label>
+        <input class="address" type="text" placeholder="请输入您的家庭地址" />
+        <label>学校名称<span class="g-red"> *</span></label>
+        <input class="school" type="text" placeholder="请输入学校名称" />
+        <label>学校区域<span class="g-red"> *</span></label>
+        <input class="address-icon schoolArea_name" type="text" readonly="" name="input_area1" placeholder="请选择学校区域" />
+        <input class="schoolArea" type="text" hidden name="" placeholder="请选择学校区域" />
+        <label>年级<span class="g-red"> *</span></label>
+        <input class="grade" type="text" placeholder="请输入学生的年级" />
+        <label>班级<span class="g-red"> *</span></label>
+        <input class="className" type="text" placeholder="请输入学生的班级" />
+        <label>学籍地址<span class="g-red"> *</span></label>
+        <input class="schoolRoll" type="text" placeholder="请输入学籍地址" />
+        <label>学籍区域</label>
+        <input class="address-icon schoolRollArea_name" type="text" readonly="" name="input_area2"
+          placeholder="请选择学籍区域" />
+        <input class="schoolRollArea" type="text" hidden name="" placeholder="请选择学籍区域" />
+        <p class="treaty-select">我已阅读详细应用协议</p>
+      </div>
+    </div>
+    <button class="g-l-r-gradient" onclick="register()">注册求索学霸Club</button>
+    <footer>
+      <a class="go-register" href="/login">已有账号，直接登录</a>
+    </footer>
+    <div class="popup">
+      <div class="popup-mask" onclick="operate('close')"></div>
+      <div class="popup-content">
+        <h3>2019求索学霸Club小升初会员服务须知</h3>
+        <p>
+          ★
+          华数·求索纪录频道与杭城中小学联合设立“求索第二课堂”，旨在为青少年及儿童的升学指导、素质教育、科学普及服务以及提供专业视听平台的趣味科普课外项目，激发青少年及儿童对学科、人文、自然的探索认知和学习兴趣。
+        </p>
+        <p>
+          “求索第二课堂” 面向杭城学子招募“求索学霸Club”会员，致力打造集自适应学习训练、青少年心理关爱支持、教育政策资讯与升学指导咨询等多元化服务为一体的学生服务平台。
+        </p>
+        <p>★ 2019“求索学霸Club”小升初会员四大服务：</p>
+        <p>1、小升初教育政策与升学指导资讯服务全学年</p>
+        <p>2、每天进步一小步——小步智学小升初自适应学习闯关训练（含六年级语文、数学、英语三门学科） 全学年</p>
+        <p>3、青少年心理关爱支持——升学压力缓压与情绪疏导一次</p>
+        <p>除此以外，会员还享有免费参加华数求索记录频道举办的所有校外活动福利，包括科普游戏、名校游园、名师讲座、家长沙龙以及各类青少年趣味性赛事活动。</p>
+        <p>4、小升初面试及简历制作指导讲座一次</p>
+        <p>★ 2019“求索学霸Club”小升初会员注册</p>
+        <p>
+          1、在线如实填写详细信息，完成注册程序，交纳相应费用，同时开通小步智学账号，即享有2019 “求索学霸Club小升初会员资格。本期小升初会员服务期限截止到2020年6月30日。
+        </p>
+        <p>
+          特别告知：会员身份一经生成，求索学霸Club即为会员开通了相应服务权限，因此在服务期限内，客户将不得以任何理由要求退费。
+        </p>
+        <p>2、2019“求索学霸Club”小升初会员服务价值 7560元/人，其中：</p>
+        <p>1）全学年小升初教育政策与升学指导资讯服务360元</p>
+        <p>2）全学年小步智学小升初自适应学习闯关训练（语、数、英） 6600元</p>
+        <p>
+          3）一对一升学压力缓压与情绪疏导一次 600元
+        </p>
+        <p>
+          前100名会员特价优惠2680元 /人
+        </p>
+        <p>
+          3、客户在注册会员时应指定单一学员为服务对象，如实填写会员有效信息，不得私下转让会员资格和分享会员服务，避免影响后期参加各类活动的资质审核。
+        </p>
+        <p>
+          4、会员在服务期限内对服务质量有疑义的，可向“求索学霸Club”客服反映诉求。若因服务产生各种纠纷的，可提请消费者协会或仲裁委员会按照规则进行调解或仲裁。仲裁裁决是终局的，对双方均有约束力。
+        </p>
+        <p>
+          将为入会会员提供最新小升初教育政策资讯与升学指导咨询服务的专业平台，乙方自愿成为甲方 “求索学霸Club”的VIP会员，接受甲方“求索学霸Club”的会员服务。为此，双方经协商一致达成本协议如下。
+        </p>
+        <p>双方就服务项目达成以下协议：</p>
+        <p>★ 会员服务特别提醒：</p>
+        <p>
+          1、请关注“求索学霸Club”公众号，并通过客服加入会员微信群，以便及时掌握资讯发布和会员服务动态信息。
+        </p>
+        <p>
+          2、请监护人密切关注学员小步智学小升初自适应学习闯关训练的完成情况，并监督学员按照要求认真达成闯关训练，努力争取更好的系统排位名次。
+        </p>
+        <p>
+          3、请会员至少提前一周时间向客服预约一对一升学压力缓压与情绪疏导，每日9:00-19:00为服务时段（含周末），其他法定节假日不作预约安排。
+        </p>
+        <p>
+          4、华数求索记录频道举办的所有校外活动福利，包括科普游戏、名校游园、名师讲座、家长沙龙以及各类青少年趣味性赛事活动皆会有场地限制和人数要求，额满即止。敬请会员及时关注活动预告，按各自实际需求及早向客服或者举办方报名参加。
+        </p>
+        <p>
+          5、2019“求索学霸Club”小升初会员服务解释权归属于华数求索纪录频道“求索学霸Club”授权运营方杭州拂晓教育科技有限公司。
+        </p>
+        <p>
+          6、一经注册会员即视作已完全了解并同意“2019求索学霸Club小升初会员服务须知”全部内容，等同于双方签约法律效力。敬请仔细阅读服务须知再行注册会员。
+        </p>
+        <p style="text-align: right;">杭州拂晓教育科技有限公司</p>
+        <button class="confirm g-l-r-gradient" onclick="operate('confirm')">确定</button>
+      </div>
+    </div>
+  </section>
+</body>
+<script src="/js/LArea.min.js"></script>
+<script src="/js/register.js"></script>
+
+</html>
